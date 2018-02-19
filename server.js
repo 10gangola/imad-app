@@ -9,20 +9,20 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article one', function (req, res) {
-  res.sendFile('article one is requested');
+app.get('/article-one', function (req, res) {
+  res.send('article one is requested');
 });
 
-app.get('/article two', function (req, res) {
-  res.sendFile('article two is requested');
+app.get('/article-two', function (req, res) {
+  res.send('article two is requested');
 });
 
-app.get('/article three', function (req, res) {
-  res.sendFile('article three is requested');
+app.get('/article-three', function (req, res) {
+  res.send('article three is requested');
 });
 
-app.get('/article four', function (req, res) {
-  res.sendFile('article four is requested');
+app.get('/article-four', function (req, res) {
+  res.send('article four is requested');
 });
 
 app.get('/ui/style.css' ,function (req, res) {
